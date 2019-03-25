@@ -1,0 +1,41 @@
+// Filename: backend/serviceModule.jsw (web modules need to have a .jsw extension)
+
+import {fetch} from 'wix-fetch';  
+
+// Four functions to call the NASA API for each type of search option
+
+// Free-text search API call
+export function getNASAImage(image) {
+  const url = 'https://images-api.nasa.gov/search?q=' + image;
+  console.log("Url: " + url);
+  
+  return fetch(url, {method: 'get'})
+    .then(response => response.json())
+}
+
+// GET request for location-filtered search
+export function getNASAImagebyLocation(location) {
+  const url = 'https://images-api.nasa.gov/search?location=' + location;
+  console.log("Url: " + url);
+  
+  return fetch(url, {method: 'get'})
+    .then(response => response.json())
+}
+
+// GET request for search filtered by start year for results
+export function getNASAImagebyYearStart(startYear) {
+  const url = 'https://images-api.nasa.gov/search?year_start=' + startYear;
+  console.log("Url: " + url);
+  
+  return fetch(url, {method: 'get'})
+    .then(response => response.json())
+}
+
+// GET request for search filtered by end year for results
+export function getNASAImagebyYearEnd(endYear) {
+  const url = 'https://images-api.nasa.gov/search?year_end=' + endYear;
+  console.log("Url: " + url);
+  
+  return fetch(url, {method: 'get'})
+    .then(response => response.json())
+}
