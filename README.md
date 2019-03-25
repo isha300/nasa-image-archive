@@ -8,3 +8,5 @@ The following functionality was completed:
 - [x] Metadata for each of the top 50 results is displayed underneath the images
 - [x] User can refine search results by location, start year for results, and end year for results
 - [x] UI/UX styling with text and color styles as well as galaxy-themed background
+
+*Website created using Wix Code
