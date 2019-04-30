@@ -1,5 +1,5 @@
 # nasa-image-archive
-Web app for the Capital One MindSumo challenge that searches NASA's image archive and displays results in an easy-to-navigate interface
+Web app for the Capital One MindSumo challenge that searches NASA's image archive using the NASA API and displays results in an easy-to-navigate interface
 
 Live website link: https://ishakabra10.wixsite.com/nasa-image-archive
 
